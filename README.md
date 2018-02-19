@@ -3,6 +3,10 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+## Updates
+
+Based on review, changed the division on line 126 in main.cpp. Previously, the result was an integer, effectively setting the latency to 0 and canceling the state prediction.
+
 ## Dependencies
 
 * cmake >= 3.5
