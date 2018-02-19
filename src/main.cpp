@@ -122,7 +122,8 @@ int main() {
           Eigen::Map<Eigen::VectorXd>  next_y_eig(ptry, 6);
           auto coeffs = polyfit(next_x_eig, next_y_eig, 3);
           // TODO: calculate the cross track error
-          double dt = (latency/1000);
+          double dt = (latency/1000.0);
+          cout<<dt<<endl;
           double cte = coeffs[0];
           // TODO: calculate the orientation error
           double epsi = -atan(coeffs[1]); 
